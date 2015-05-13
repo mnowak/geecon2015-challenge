@@ -45,4 +45,9 @@ public class ReportedUser {
     public int hashCode() {
         return Objects.hash(id, name, transactionsAmount);
     }
+
+    @Override
+    public String toString() {
+        return String.format("[%s %s %s]", getId(), getName(), getTransactionsAmount());
+    }
 }
